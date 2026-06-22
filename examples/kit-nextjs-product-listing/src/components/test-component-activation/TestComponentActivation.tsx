@@ -16,7 +16,7 @@ type ImageWithDescriptionDefaultProps = {
   fields?: ImageWithDescriptionDefaultFields;
 };
 
-export const ImageWithDescriptionDefault = (props: ImageWithDescriptionDefaultProps) => {
+export const Default = (props: ImageWithDescriptionDefaultProps) => {
   if (!props?.fields) return null;
   const defaultFields: ImageWithDescriptionDefaultFields = {
     image: { value: { src: '', alt: '' } },
