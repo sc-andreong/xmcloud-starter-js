@@ -18,3 +18,5 @@ export const ImageRight: React.FC<PromoAnimatedProps> = (props) => {
   const isPageEditing = props.page.mode.isEditing;
   return <PromoAnimatedImageRight {...props} isPageEditing={isPageEditing} />;
 };
+
+// Code extraction change (Solterra) 1
