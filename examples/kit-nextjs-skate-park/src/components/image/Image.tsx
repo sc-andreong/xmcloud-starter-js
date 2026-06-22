@@ -108,3 +108,5 @@ export const Default: React.FC<ImageProps> = (props) => {
     </ImageWrapper>
   );
 };
+
+// Code extraction change (Basic) 1
