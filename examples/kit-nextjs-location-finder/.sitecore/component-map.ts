@@ -4,6 +4,7 @@ import { BYOCServerWrapper, NextjsContentSdkComponent, FEaaSServerWrapper } from
 import { Form } from '@sitecore-content-sdk/nextjs';
 
 // end of built-in components
+import * as TestComponentActivation from 'src/components/test-component-activation/TestComponentActivation';
 import * as zipcodemodaldev from 'src/components/zipcode-modal/zipcode-modal.dev';
 import * as VideoPlayerdev from 'src/components/video/VideoPlayer.dev';
 import * as VideoModaldev from 'src/components/video/VideoModal.dev';
@@ -346,6 +347,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['AccordionBlockCentered', { ...AccordionBlockCentereddev }],
   ['AccordionBlock', { ...AccordionBlock, componentType: 'client' }],
   ['Accordion5050TitleAbove', { ...Accordion5050TitleAbovedev }],
+  ['TestComponentActivation', { ...TestComponentActivation }],
 ]);
 
 export default componentMap;

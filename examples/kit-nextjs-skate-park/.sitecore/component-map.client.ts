@@ -3,6 +3,7 @@
 import { BYOCClientWrapper, NextjsContentSdkComponent, FEaaSClientWrapper } from '@sitecore-content-sdk/nextjs';
 import { Form } from '@sitecore-content-sdk/nextjs';
 
+import * as TestComponentActivation from 'src/components/test-component-activation/TestComponentActivation';
 import * as Navigation from 'src/components/navigation/Navigation';
 import * as ContentBlock from 'src/components/content-block/ContentBlock';
 
@@ -12,6 +13,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['Form', Form],
   ['Navigation', { ...Navigation }],
   ['ContentBlock', { ...ContentBlock }],
+  ['TestComponentActivation', { ...TestComponentActivation }],
 ]);
 
 export default componentMap;

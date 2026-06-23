@@ -3,6 +3,7 @@
 import { BYOCClientWrapper, NextjsContentSdkComponent, FEaaSClientWrapper } from '@sitecore-content-sdk/nextjs';
 import { Form } from '@sitecore-content-sdk/nextjs';
 
+import * as TestComponentActivation from 'src/components/test-component-activation/TestComponentActivation';
 import * as VideoPlayerdev from 'src/components/video/VideoPlayer.dev';
 import * as VideoModaldev from 'src/components/video/VideoModal.dev';
 import * as Video from 'src/components/video/Video';
@@ -82,6 +83,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['AnimatedSection', { ...AnimatedSectiondev }],
   ['AlertBanner', { ...AlertBannerdev }],
   ['AccordionBlock', { ...AccordionBlock }],
+  ['TestComponentActivation', { ...TestComponentActivation }],
 ]);
 
 export default componentMap;

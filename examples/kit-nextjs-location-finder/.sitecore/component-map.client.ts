@@ -3,6 +3,7 @@
 import { BYOCClientWrapper, NextjsContentSdkComponent, FEaaSClientWrapper } from '@sitecore-content-sdk/nextjs';
 import { Form } from '@sitecore-content-sdk/nextjs';
 
+import * as TestComponentActivation from 'src/components/test-component-activation/TestComponentActivation';
 import * as zipcodemodaldev from 'src/components/zipcode-modal/zipcode-modal.dev';
 import * as VideoPlayerdev from 'src/components/video/VideoPlayer.dev';
 import * as VideoModaldev from 'src/components/video/VideoModal.dev';
@@ -204,6 +205,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['AccordionBlockTwoColumnTitleLeft', { ...AccordionBlockTwoColumnTitleLeftdev }],
   ['AccordionBlockOneColumnTitleLeft', { ...AccordionBlockOneColumnTitleLeftdev }],
   ['AccordionBlock', { ...AccordionBlock }],
+  ['TestComponentActivation', { ...TestComponentActivation }],
 ]);
 
 export default componentMap;

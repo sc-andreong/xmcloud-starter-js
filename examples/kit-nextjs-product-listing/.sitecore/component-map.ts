@@ -4,6 +4,7 @@ import { BYOCServerWrapper, NextjsContentSdkComponent, FEaaSServerWrapper } from
 import { Form } from '@sitecore-content-sdk/nextjs';
 
 // end of built-in components
+import * as TestComponentActivation from 'src/components/test-component-activation/TestComponentActivation';
 import * as zipcodemodaldev from 'src/components/zipcode-modal/zipcode-modal.dev';
 import * as VerticalImageAccordion from 'src/components/vertical-image-accordion/VerticalImageAccordion';
 import * as verticalimageaccordionprops from 'src/components/vertical-image-accordion/vertical-image-accordion.props';
@@ -519,6 +520,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['animated-section', { ...animatedsectionprops }],
   ['AlertBanner', { ...AlertBannerdev }],
   ['alert-banner', { ...alertbannerprops }],
+  ['TestComponentActivation', { ...TestComponentActivation }],
 ]);
 
 export default componentMap;
